@@ -1,21 +1,190 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
 }
 
-html, body {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  background-color: #fff;
+body{
+background-color: #800080;
 }
 
-main {
-  margin: auto;
-  width: 50%;
-  padding: 20px;
+header {
+    text-align: center;
+    background-color: #0078D4;
+    color: #fff;
+    padding: 40px;
 }
 
-main > h1 {
-  text-align: center;
-  font-size: 3.5em;
+footer {
+    background-color: #0078D4;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #FF5733;
+    transition: color 0.3s;
+}
+
+h2 {
+    font-size: 28px;
+    color: #E85A4F;
+    transition: color 0.3s;
+}
+
+h3, h4 {
+    font-size: 24px;
+    color: #000;
+    transition: color 0.3s;
+}
+
+p {
+    font-size: 16px;
+    background-color: #F2F2F2;
+    color: #333;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+ul, ol {
+    font-size: 16px;
+    background-color: #E0E0E0;
+    color: #333;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+a {
+    text-decoration: none;
+    color: #0078D4;
+    transition: color 0.3s;
+}
+
+/* Hover effects */
+h1:hover {
+    color: #a0dda8;
+background-image: linear-gradient(45deg, #ffedc5, #ffcb6b);
+    background-size: 200% 200%;
+    animation: shining 1s infinite;
+    text-transform: uppercase;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent
+    
+}
+
+h2:hover {
+    color: #4B0082;
+background-image: linear-gradient(45deg, #ffedc5, #ffcb6b);
+    background-size: 200% 200%;
+    animation: shining 1s infinite;
+    text-transform: uppercase;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent
+}
+
+h3:hover, h4:hover {
+    background-image: linear-gradient(45deg, #ffedc5, #ffcb6b);
+    background-size: 200% 200%;
+    animation: shining 1s infinite;
+    color: #000;
+    text-transform: uppercase;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Shining effect on hover */
+@keyframes shining {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 200% 200%;
+    }
+}
+
+p:hover {
+    background-color: #D0D0D0;
+}
+
+ul:hover, ol:hover {
+    background-color: #C0C0C0;
+}
+
+a:hover {
+    color: #005AAB;
+}
+
+/* Animations */
+@keyframes moveText {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.move-text {
+    animation: moveText 2s infinite;
+}
+
+@keyframes spinImage {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spin-image {
+    animation: spinImage 4s infinite;
+}
+
+.hidden {
+    display: none;
+}
+
+#popupContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#popupContainer input[type="checkbox"]:checked + #popupContainer {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#popupImage {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+#closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
 }
