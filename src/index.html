@@ -1,17 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning-Based Intrusion Detection Systems</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+<script>
+function openImage() {
+    // You can use JavaScript to open a pop-up or perform any other action here.
+    // For a simple example, let's open a pop-up window with the image.
+    window.open('click.jpeg', 'Image Pop-up', 'width=400, height=300');
+}
+</script>
 
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
-</body>
+    <header>
+        <h1>Machine Learning-Based Intrusion Detection Systems</h1>
+        <h2>A Review of Research Areas and Open Problems</h2>
+        <h2>Sai Yashwanth Ravulapati<br>School of Informatics, Computing and Cyber Systems<br>Northern Arizona University (NAU)<br>Flagstaff, USA</h2>
+        <p><a href="mailto:sr2977@nau.edu">Email: sr2977@nau.edu</a></p>
+    </header>
+    
+    <section>
+        <h2 class="move-text">Abstract</h2>
+        <!-- Place your abstract content here -->
+        <p>Machine learning (ML) has shown to be a strong method for identifying network intrusions in real time in the past few years. We perform an in-depth study of the research themes underlying ML-based detection systems for intrusions (IDSs) in this work. We assess the various approaches used in the available literature, such as supervised, unsupervised, and reinforcement learning. Furthermore, we delve into the field's pressing issues and challenges, such as the need for stronger algorithms that can resist attacks from adversaries and the establishment of effective strategies for dealing with enormous volumes of data by modern networks. Our research sheds light on the present state of ML-based intrusion detection systems and offers insights into future research areas that might help improve the efficacy and reliability of these systems.</p>
+<button onclick="openImage()">Click Me</button>
 
+    </section>
+
+    <section>
+        <h2 class="move-text">Introduction</h2>
+        <!-- Place your introduction content here -->
+        <p>Network security has become a key concern for enterprises of all sizes and types in recent years. As the volume and sophistication of cyber assaults increase, protecting against these threats becomes more difficult. Intrusion detection systems (IDSs) are one of the most important technologies for detecting and preventing network intrusions. These systems examine network traffic for patterns that signal the existence of malicious activity. Traditional intrusion detection systems, on the other hand, are frequently restricted in their capacity to identify innovative or previously undisclosed threats since they rely on pre-defined criteria and signatures. Machine learning (ML) has emerged as a viable strategy for improve by allowing hacking detection systems to function them to learn from data and adapt to new threats in real-time.</p>
+
+<p>
+In this study, we undertake a comprehensive overview of the investigation of machine learning-based intrusion detection systems. We examine the many types of ML approaches used in this context, as well as the obstacles and constraints involved with their use. Our objective is to present a complete review of the current status of ML-based intrusion detection systems (IDSs) and to identify future research approaches that might assist to enhance their accuracy and reliability in the face of emerging threats.
+</p>
+
+    </section>
+
+<section>
+        <h2 class="move-text">Overview/Background</h2>
+        <!-- Place your introduction content here -->
+        <p>Traditional intrusion detection systems (IDSs) primarily depend on rule-based or signature-based detection approaches, which have limitations in detecting innovative threats. Machine learning (ML)-based intrusion detection systems (IDSs) provide a more flexible and scalable method to intrusion detection because they can learn from enormous amounts of data and adapt to new sorts of assaults. There are three approaches to ML-based IDSs: supervised learning, unsupervised learning, and reinforcement learning.</p>
+
+<p>
+Unsupervised learning, on the other hand, entails training a model without any specified labels on unlabeled data. Unsupervised learning seeks to uncover hidden patterns and structures in data. Unsupervised learning may be used for anomaly detection in the context of intrusion detection systems, where the model learns to recognize patterns in data that differ from typical behavior. This strategy is effective when the properties of regular traffic are well understood but defining the characteristics of malicious traffic is challenging.
+</p>
+
+<p>
+Reinforcement learning is a form of machine learning
+method in which an agent is trained to execute behaviors in
+an environment in order to maximize a reward signal. The
+agent learns by trial and error, altering its behavior in response
+to feedback from its surroundings. In the context of intrusion
+detection systems, reinforcement learning may be used to teach
+an agent to identify and mitigate intrusions. This method is
+beneficial when the IDS is operating in a dynamic environment
+with changing threats and attack patterns.
+</p>
+
+<p>
+Each of these systems has advantages and disadvantages
+and is appropriate for different sorts of intrusion detection
+scenarios. The technique chosen is determined on the nature of
+the data and the sort of attack that the IDS is meant to detect.
+In the sections that follow, we will go through each of these
+techniques in greater depth and emphasize their contributions
+to the development of ML-based IDSs.
+</p>
+</section>
+
+<section>
+        <h2 class="move-text">Research Area 1: Machine Learning Algorithms for Intrusion Detection</h2>
+        <p>There are three types of machine learning algorithms: supervised, unsupervised, and reinforcement learning, each with its own set of advantages and disadvantages. Improving the interpretability of machine learning models, dealing with unbalanced datasets, and dealing with adversarial assaults on IDSs are some of the primary issues in this field. Choosing adequate features and extracting useful information from raw data is also an important step in constructing successful ML-based IDSs. This study topic is critical for developing the science of intrusion detection and enhancing computer network security.</p>
+
+        <h3 class="move-text">Subtopics and Approaches:</h3>
+
+        <h4 class="move-text">A. Supervised Learning for Intrusion Detection:</h4>
+        <ul>
+            <li><b>Decision Trees</b>: Based on the values of input characteristics, decision trees are a machine learning method used
+in supervised learning-based intrusion detection systems
+to categorize network traffic as benign or malicious.</li>
+<li><b>Random Forests</b>: Random Forest is an ensemble learning approach that improves classification accuracy and
+resilience in machine learning-based intrusion detection
+systems by merging numerous decision trees trained on
+diverse subsets of data and characteristics.</li>
+<li><b>Support Vector Machines(SVM)</b>: Support Vector Machines (SVM) are a popular supervised machine learning algorithm used in intrusion detection systems. They divide data into different classes using a hyperplane in a high-dimensional feature space, with the goal of
+maximizing the margin between classes while minimizing classification error.</li>
+<li><b>Neural Networks</b>: In intrusion detection systems, neural
+networks, a class of machine learning algorithms determined by the structure and function of biological neural
+networks, are widely used to learn complex patterns in
+network traffic data by iteratively adjusting the strengths
+of connections between artificial neurons to minimize
+prediction errors.</li>
+</ul>
+
+<h4 class="move-text">B.  Unsupervised Learning for Intrusion Detection:</h4>
+        <ul>
+            <li><b>K-means Clustering</b>: K-means Clustering is an unsupervised machine learning approach that separates data
+points into k clusters by minimizing the sum of squared
+distances between each data point and its nearest cluster
+center. It is employed in intrusion detection systems.</li>
+<li><b>Dimensionality reduction techniques</b>: Dimensionality reduction techniques are a type of machine learning algorithm that is used in intrusion detection systems to
+reduce the number of features in large amounts of data
+while retaining as much of the original information as
+possible in order to improve computational efficiency,
+reduce overfitting, and improve data interpretability.</li>
+<li><b>Isolation Forest</b>: Isolation Forest is a method of unsupervised machine learning used in intrusion detection
+systems that isolates observations by randomly selecting a
+feature and then randomly selecting a split value between
+the maximum and minimum values of the selected feature
+to partition the data, and then repeating the procedure
+continually as long as all data points are isolated, with
+anomalies typically requiring fewer splits than normal
+points.</li>
+<li><b>Ensemble of unsupervised learners</b>: Ensemble of unsupervised learners is a machine learning approach used in
+intrusion detection systems to improve the precision and
+durability of intrusion detection by utilizing the diversity
+of the individual models and their ability to capture
+different aspects of the data.</li>
+</ul>
+
+<h4 class="move-text">C. Reinforcement Learning for Intrusion Detection:</h4>
+        <ul>
+            <li><b>Q-learning</b>: Q-learning is a reinforcement learning algorithm used in artificial intelligence and game theory
+to find the optimal action-selection policy based on an
+agent’s experience and rewards by learning the expected
+value of taking a specific action in a given state and
+iteratively updating the action-value function using the
+Bellman equation until convergence.</li>
+<li><b>Actor-Critic</b>: Actor-Critic is a reinforcement learning
+algorithm used in artificial intelligence and game theory
+to simultaneously acquire a policy and an estimate of the
+value function by employing two neural networks: the
+actor network, which outputs action probabilities based
+on the current policy, and the critic network, which
+evaluates the expected reward of the current state and
+the action taken by the actor network and updates the
+network parameters based on the TD-error.</li>
+<li><b>Policy Gradient</b>: Policy Gradient is a reinforcement learning algorithm used in artificial intelligence and game
+theory to optimize policy parameters directly by estimating the gradient of the expected reward with respect
+to the policy parameters and updating the parameters
+using stochastic gradient ascent to maximize the expected
+reward without explicitly computing the value function.</li>
+</ul>
+
+<img src="machine.png" alt="Machine Learning Image" width="400" height="300" class="spin-image">
+
+<h4 class="move-text">Open Problems and Challenges for Future Research:</h4>
+<ul>
+<li>Selection of appropriate features and techniques for building IDSs.</li>
+<li>Balancing between false positives and false negatives.</li>
+<li>Handling imbalanced data and concept drift.</li>
+<li>Adversarial attacks and robustness of IDSs.</li>
+<li>Interpreting and explaining the decisions made by IDSs.</li>
+</ul>
+
+</section>
+
+<section>
+        <h2 class="move-text">Research Area 2:  Feature Selection and
+Extraction For Machine Learning-Based
+Intrusion Detection Systems</h2>
+        <p>Feature selection and extraction are major study areas in
+ML-based IDSs. The process of picking the most relevant
+features or characteristics from raw data to employ in the
+ML model is referred to as feature selection and extraction.
+Because the quality of features included in ML models has
+a substantial influence on the accuracy of intrusion detection,
+this study field is crucial for advancing the issue ahead.</p>
+
+        <h3 class="move-text">Subtopics and Approaches:</h3>
+
+        <h4 class="move-text">A. Feature Selection Techniques:</h4>
+        <ul>
+            <li><b>Wrapper methods</b>: Wrapper methods are feature selection
+techniques used in machine learning and data mining
+to evaluate the performance of a subset of features by
+training a model on each subset and selecting the subset
+in the best performance, usually by the use of a heuristic
+search algorithm or an optimization method.
+</li>
+<li><b>Filter methods</b>: Filter methods are feature selection techniques used in machine learning and data mining to rank
+features based on a statistical measure of their correlation
+or independence with the target variable, and select the
+top-ranked features with the highest predictive power and
+the lowest redundancy, without taking into account the
+performance of a specific learning algorithm.</li>
+<li><b>Embedded methods</b>: Embedded methods are feature selection techniques used in machine learning and data
+mining to select those features that are most pertinent
+during training the model by incorporating the feature
+selection process into the model construction itself, typically through the use of regularization techniques or decision tree algorithms that penalize irrelevant or redundant
+features and improve the model’s.</li>
+<li><b> Hybrid methods</b>: Hybrid methods are feature selection
+techniques used in machine learning and data mining that
+combine two or more feature selection techniques, such as
+filter and wrapper methods, to leverage their complementary strengths and overcome their limitations, resulting in
+improved feature selection performance, interpretability,
+and scalability.</li>
+</ul>
+
+<h4 class="move-text">B. Feature Extraction Techniques:</h4>
+        <ul>
+            <li><b>Principal Component Analysis(PCA)</b>: Principal Component Analysis (PCA) is a widespread autonomous
+machine learning approach that reduces dimensionality,
+compresses data, and extracts features by finding and
+choosing a smaller subset of the most relevant variables
+that explain the greatest variance in the original data.
+</li>
+<li><b>Independent Component Analysis(ICA)</b>: Independent
+Component Analysis (ICA) is a machine learning computational approach that identifies and exploits statistical
+features of data to split multivariate signals into their
+oneself, distinct components.
+</li>
+<li><b>inear Discriminant Analysis(LDA)</b>: Linear Discriminant Analysis (LDA) is a method utilizing supervised
+learning that finds a linear combination of features that
+maximum separates the classes while reducing intraclass variation to minimize the dimensionality of a highdimensional dataset.
+</li>
+<li><b>Non-negative Matrix Factorization(NMF)</b>: Non-negative
+Matrix Factorization (NMF) is a data analysis and unconstrained learning approach that divides a non-negative
+matrix into two lower-rank matrices with non-negative
+components that can be regarded as expressing latent
+properties of the original data.</li>
+</ul>
+
+<h4 class="move-text">C. Deep Learning-Based Feature Selection and Extraction:</h4>
+        <ul>
+            <li><b>Convolutional Neural Networks(CNN)</b>: Convolutional
+Neural Networks (CNN) are a type of deep learning
+neural network that is especially well-suited for image
+recognition and processing tasks due to their dealt architecture that uses convolutional neural network layers in
+order to automatically learn a hierarchical set of features
+from raw pixel data. These networks can detect and
+categorize pictures with high accuracy by stacking many
+convolutional layers and learning increasingly abstract
+and sophisticated properties.</li>
+<li><b>Recurrent Neural Networks(RNN)</b>: Recurrent Neural
+Networks (RNN) are a sort of artificial neural network in
+which node connections create a directed cycle, allowing
+the network to retain a state and handle sequential input
+such as time series, spoken language, and audio signals.
+</li>
+<li><b>Generative Adversarial Networks(GAN)</b>: GANs are a
+deep learning system that consists of two neural networks
+- a generator network and a discriminator network - that
+are trained in an adversarial situation to produce synthetic
+data that mimics actual data. The generator network
+creates fictitious data samples, while the discriminator
+network learns to discriminate between genuine and fictitious data samples. The generator network is enhanced
+through an iterative process of training and feedback
+to create increasingly realistic synthetic data, while the
+discriminator network is trained to better discern between
+genuine and false data.</li>
+</ul>
+
+<h4 class="move-text">Open Problems and Challenges for Future Research:</h4>
+<ul>
+<li> Developing feature selection and extraction techniques that are robust to changes in network traffic patterns.</li>
+<li>Improving the interpret-ability of deep learning-based feature selection and extraction methods.</li>
+<li> Addressing the issue of class imbalance in intrusion detection data sets.</li>
+<li> Incorporating domain knowledge and expert input into the feature selection and extraction process.</li>
+<li> Developing feature selection and extraction techniques that are scalable to large-scale network traffic data..</li>
+</ul>
+</section>
+
+<section>
+        <h2 class="move-text">Conclusion</h2>
+        <!-- Place your abstract content here -->
+        <p>Lastly, due to the increasing number of security threats in
+computer systems, Machine Learning-based Intrusion Detection Systems have become increasingly important. To boost
+transparency and confidence in the models, many ML approaches like as Random Forests, Support Vector Machines,
+Neural Networks, and Convolutional Neural Networks have
+been applied to intrusion detection, coupled with interpretability techniques such as LIME and SHAP. However, the systems
+are still vulnerable to poisoning, evasion, and Trojan attacks,
+and countermeasures such as adversarial training, robust feature extraction and selection, and model ensembling must be
+developed to improve the system’s robustness against attacks.</p>
+    </section>
+
+<section>
+    <h2 class="move-text">References</h2>
+    <ol>
+        <li>
+            Tavallaee, M., Bagheri, E., Lu, W., & Ghorbani, A. A. (2009).
+            A detailed analysis of the KDD CUP 99 data set. In Proceedings
+            of the IEEE Symposium on Computational Intelligence for
+            Security and Defense Applications (pp. 1-6). IEEE.
+        </li>
+        <li>
+            Alazab, M., Venkataraman, S., & Watters, P. (2013). A deep
+            learning approach for network intrusion detection system. In
+            Proceedings of the 27th IEEE International Conference on
+            Advanced Information Networking and Applications Workshops
+            (pp. 1215-1220). IEEE.
+        </li>
+        <li>
+            Wang, Y., Yao, H., Zou, C., & Su, L. (2018). A survey on deep
+            learning in network intrusion detection. IEEE Access, 6,
+            44252-44270.
+        </li>
+        <li>
+            Gharibshah, J., Khalifeh, S., & Sargolzaei, M. (2020). A
+            comprehensive survey on intrusion detection using machine
+            learning techniques. Journal of Ambient Intelligence and
+            Humanized Computing, 11(7), 2935-2956.
+        </li>
+        <li>
+            Das, S., Misra, S., Sahoo, M. N., & Sahoo, S. K. (2020).
+            Ensemble techniques in intrusion detection system: A survey.
+            Journal of Ambient Intelligence and Humanized Computing,
+            11(4), 1647-1663.
+        </li>
+        <li>
+            Xu, X., Jiang, X., & Gong, L. (2019). A survey of deep
+            learning-based network intrusion detection. IEEE Access, 7,
+            101203-101220.
+        </li>
+        <li>
+            Ahmadi, M., Jafari, M., & Miri, A. (2021). A survey on machine
+            learning approaches for intrusion detection in IoT networks.
+            Journal of Network and Computer Applications, 185, 103060.
+        </li>
+        <li>
+            Alrawais, A., Alhothaily, A., Hu, S., Cheng, X., & Huang, X.
+            (2018). A survey of machine and deep learning methods for
+            Internet of Things (IoT) security. IEEE Communications Surveys
+            & Tutorials, 20(4), 2691-2705.
+        </li>
+        <li>
+            Chen, C., Wu, J., & Li, J. (2019). Machine learning techniques
+            for network intrusion detection: A survey. IEEE Communications
+            Surveys & Tutorials, 21(4), 3039-3070.
+        </li>
+        <li>
+            Aharony, N., & Sichitiu, M. L. (2017). Machine learning
+            techniques in intrusion detection systems. IEEE Communications
+            Surveys & Tutorials, 19(2), 829-846.
+        </li>
+    </ol>
+</section>
+
+<section>
+        <h2 class="move-text">Addendum - Explanation of HTML Tags</h2>
+        <ol>
+            <li>
+                &lt;html&gt;:
+                <p><strong>Explanation:</strong> This tag defines the root of the HTML document.</p>
+                <p><strong>Why Used:</strong> It's the fundamental tag that encloses the entire HTML document.</p>
+            </li>
+            <li>
+                &lt;head&gt;:
+                <p><strong>Explanation:</strong> This tag contains meta-information about the HTML document.</p>
+                <p><strong>Why Used:</strong> It's where you include metadata like character set, viewport settings, and the document title.</p>
+            </li>
+            <li>
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0&gt;:
+                <p><strong>Explanation:</strong> Configures the viewport for responsive design.</p>
+                <p><strong>Why Used:</strong> To make the web page adapt to various device screen sizes.</p>
+            </li>
+
+ <li>
+                &lt;title&gt;:
+                <p><strong>Explanation:</strong> Sets the title of the HTML document, displayed in the browser tab.</p>
+                <p><strong>Why Used:</strong> To provide a meaningful title for your webpage for SEO and user experience.</p>
+            </li>
+ <li>
+                &lt;style&gt;:
+                <p><strong>Explanation:</strong>  Contains inline CSS styles for styling elements on the page.</p>
+                <p><strong>Why Used:</strong> For defining custom styles for the webpage, such as fonts, margins, and padding.</p>
+            </li>
+ <li>
+                &lt;body&gt;:
+                <p><strong>Explanation:</strong> Encloses the main content of the webpage.</p>
+                <p><strong>Why Used:</strong> To structure and present the main content visible to users.</p>
+            </li>
+ <li>
+                &lt;header&gt;:
+                <p><strong>Explanation:</strong> Defines a header section within the body of the document.</p>
+                <p><strong>Why Used:</strong> To structure and style the header of your webpage, typically containing titles and author information.</p>
+            </li>
+ <li>
+                &lt;h1&gt;,&lt;h2&gt;:
+                <p><strong>Explanation:</strong> Heading tags define section headings and subheadings.</p>
+                <p><strong>Why Used:</strong> To provide a hierarchical structure to your content, indicating the importance of headings.</p>
+            </li>
+ <li>
+                &lt;p&gt;:
+                <p><strong>Explanation:</strong> Defines paragraphs of text.</p>
+                <p><strong>Why Used:</strong> To structure and present text content in paragraph form.</p>
+            </li>
+ <li>
+                &lt;section&gt;:
+                <p><strong>Explanation:</strong> Defines a section of the webpage.</p>
+                <p><strong>Why Used:</strong> To divide the content into logical sections, making it easier to style and structure.</p>
+            </li>
+ <li>
+                &lt;ul&gt;,&lt;ol&gt;,&lt;li&gt;:
+                <p><strong>Explanation:</strong> Lists elements (unordered and ordered) and list items.</p>
+                <p><strong>Why Used:</strong> To present information in a clear and organized manner, such as in bullet points or numbered lists.</p>
+            </li>
+ <li>
+                &lt;img&gt;:
+                <p><strong>Explanation:</strong> Embeds an image in the webpage.</p>
+                <p><strong>Why Used:</strong> To display images or graphics within the content.</p>
+            </li>
+ <li>
+                &lt;a&gt;:
+                <p><strong>Explanation:</strong> Defines hyperlinks.</p>
+                <p><strong>Why Used:</strong> To create clickable links, such as email links in your author information.</p>
+            </li>
+ <li>
+                &lt;footer&gt;:
+                <p><strong>Explanation:</strong> Defines a footer section at the end of the document.</p>
+                <p><strong>Why Used:</strong> To add information like copyright notices or contact details at the bottom of the webpage.</p>
+            </li>
+</section>
+<section>
+<h2 class="move-text">Addendum - Explanation of CSS Styles</h2>
+<ol>
+    <li>
+        <code>body</code>:
+        <p><strong>Explanation:</strong> This style defines global settings for the entire webpage.</p>
+        <p><strong>Why Used:</strong> It sets the font, margins, padding, and background color for the entire page.</p>
+    </li>
+    <li>
+        <code>header</code>:
+        <p><strong>Explanation:</strong> Styles for the header section of the webpage.</p>
+        <p><strong>Why Used:</strong> To center text, set background color, and change text color in the header.</p>
+    </li>
+    <li>
+        <code>footer</code>:
+        <p><strong>Explanation:</strong> Styles for the footer section at the bottom of the webpage.</p>
+        <p><strong>Why Used:</strong> To set the background color, text color, and text alignment for the footer.</p>
+    </li>
+    <li>
+        <code>h1</code>:
+        <p><strong>Explanation:</strong> Styles for the top-level headings (h1).</p>
+        <p><strong>Why Used:</strong> It defines the font size, color, and hover effect for h1 headings.</p>
+    </li>
+    <li>
+        <code>h2</code>:
+        <p><strong>Explanation:</strong> Styles for the secondary headings (h2).</p>
+        <p><strong>Why Used:</strong> It defines the font size, color, and hover effect for h2 headings.</p>
+    </li>
+    <li>
+        <code>h3, h4</code>:
+        <p><strong>Explanation:</strong> Styles for tertiary (h3) and quaternary (h4) headings.</p>
+        <p><strong>Why Used:</strong> It defines the font size and transition effect for h3 and h4 headings.</p>
+    </li>
+    <li>
+        <code>p</code>:
+        <p><strong>Explanation:</strong> Styles for paragraphs of text.</p>
+        <p><strong>Why Used:</strong> It defines the font size, background color, and transition effect for paragraphs.</p>
+    </li>
+    <li>
+        <code>ul, ol</code>:
+        <p><strong>Explanation:</strong> Styles for unordered lists (ul) and ordered lists (ol).</p>
+        <p><strong>Why Used:</strong> It sets the font size, background color, and transition effect for lists.</p>
+    </li>
+    <li>
+        <code>a</code>:
+        <p><strong>Explanation:</strong> Styles for hyperlinks (anchors).</p>
+        <p><strong>Why Used:</strong> It defines text decoration, color, and hover effect for links.</p>
+    </li>
+    <li>
+        <code>h1:hover, h2:hover, h3:hover, h4:hover</code>:
+        <p><strong>Explanation:</strong> Hover styles for headings.</p>
+        <p><strong>Why Used:</strong> These styles define hover effects for all headings, including color changes and text transformations.</p>
+    </li>
+    <li>
+        <code>p:hover, ul:hover, ol:hover, a:hover</code>:
+        <p><strong>Explanation:</strong> Hover styles for paragraphs, lists, and links.</p>
+        <p><strong>Why Used:</strong> These styles define hover effects for paragraphs, lists, and links, including color and background changes.</p>
+    </li>
+    <li>
+        <code>.move-text</code>:
+        <p><strong>Explanation:</strong> Animation for moving text.</p>
+        <p><strong>Why Used:</strong> It defines the animation and movement effect for elements with the class "move-text."</p>
+    </li>
+    <li>
+        <code>.spin-image</code>:
+        <p><strong>Explanation:</strong> Animation for spinning images.</p>
+        <p><strong>Why Used:</strong> It defines the animation effect for elements with the class "spin-image."</p>
+    </li>
+    <li>
+        <code>#popupContainer</code>:
+        <p><strong>Explanation:</strong> Styles for a popup container.</p>
+        <p><strong>Why Used:</strong> It defines the appearance and transition for a popup container used with a checkbox input.</p>
+    </li>
+    <li>
+        <code>#popupImage, #closeButton</code>:
+        <p><strong>Explanation:</strong> Styles for the popup image and close button.</p>
+        <p><strong>Why Used:</strong> These styles define the appearance of the popup image and the close button inside the popup container.</p>
+    </li>
+</ol>
+</section>
+
+
+    <footer>
+        &copy; 2023 Sai Yashwanth Ravulapati
+    </footer>
+</body>
 </html>
