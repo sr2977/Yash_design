@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Center</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    footer strong {
+        display: block;
+        text-align: center;
+        font-weight: bold;
+    }
+    footer {
+        text-align: left;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+        margin-top: 0px; /* Adjusted margin-top */
+    }
+
+    footer p {
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        color: #4caf50;
+    }
+
+    ul {
+        margin-left: 20px;
+    }
+
+    li {
+        margin-bottom: 5px;
+    }
+
+.addendum {
+        border: 1px solid #4bbbac;
+        padding: 20px;
+        background-color: #96b159;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        margin: 10px 0;
+    }
+    .addendum p {
+        margin: 5px 0;
+    }
+    .addendum ul {
+        list-style-type: disc;
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+    .addendum ul ul {
+        list-style-type: circle;
+        margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Welcome to Game Center</h1>
+      <img src="1.jpg" alt="Attractive Graphic">
+    </header>
+    <main>
+      <div class="games">
+        <button id="lightsOutButton">Play Lights Out</button>
+        <button id="otherGameButton">Play Tic Tac Toe</button>
+      </div>
+    </main>
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="background_music.mp3" type="audio/mpeg">
+  </audio>
+
+  <footer>
+    <div class="addendum">
+      <strong>Addendum:</strong>
+<p>Describe your process and creative choices along with any challenges faced and how you overcame them, including insights gained during this process.</p>
+      <ul>
+        <li><h3>Process Overview:</h3>
+          <ul>
+            <li>Initial planning for Game Center structure.</li>
+            <li>Designing basic HTML structure for each game.</li>
+            <li>Implementing dynamic elements using JavaScript.</li>
+          </ul>
+        </li>
+        <li><h3>Creative Choices:</h3>
+          <ul>
+            <li>Consistency in design and layout across pages.</li>
+            <li>Separate stylesheets and scripts for each game.</li>
+            <li>Dynamic content generation for game boards.</li>
+          </ul>
+        </li>
+        <li><h3>Challenges Faced:</h3>
+          <ul>
+            <li>Dynamic grid creation for Lights Out and Tic Tac Toe.</li>
+            <li>Resolving duplicate ID conflicts within the page.</li>
+          </ul>
+        </li>
+        <li><h3>Insights Gained:</h3>
+          <ul>
+            <li>Improved understanding of JavaScript DOM manipulation.</li>
+            <li>Importance of structured, scalable code for future enhancements.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
