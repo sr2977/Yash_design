@@ -1,0 +1,67 @@
+/* Styles for Lights Out game */
+/* Styles for Lights Out game */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #bc2828; /* Add your preferred background color or image */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-image: url('lights_out_background.jpg'); /* Replace with your background image */
+  background-size: cover;
+}
+
+/* Rest of your CSS remains the same */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  grid-template-rows: repeat(5, 50px);
+  gap: 5px;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.square.is-off {
+  background-color: #333;
+}
+
+#resetButton, #returnHomeButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #009688;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+#resetButton:hover, #returnHomeButton:hover {
+  background-color: #00bfa5;
+}
